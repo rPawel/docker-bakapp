@@ -1,0 +1,12 @@
+GPG_KEY=
+GPG_PW=
+TARGET=
+GPG_OPTS='--pinentry-mode loopback'
+SOURCE='/data'
+FILENAME='.backupignore'
+DUPL_PARAMS="$DUPL_PARAMS --exclude-if-present '$FILENAME'"
+MAX_AGE=
+MAX_FULL_BACKUPS=
+MAX_FULLBKP_AGE=
+DUPL_PARAMS="$DUPL_PARAMS --full-if-older-than $MAX_FULLBKP_AGE "
+DUPL_PARAMS="$DUPL_PARAMS --allow-source-mismatch --num-retries 5 --backend-retry-delay 30"

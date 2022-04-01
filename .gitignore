@@ -1,0 +1,3 @@
+/gpg-keys/gpgkey.*.asc
+/data/*
+/docker-compose.yaml
